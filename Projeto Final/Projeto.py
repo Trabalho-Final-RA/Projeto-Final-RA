@@ -600,16 +600,16 @@ def regras():
 
 		fonte = pygame.font.SysFont('comicsansms', 20)
 
-		info1 = fonte.render('O jogo de damas eh praticado em um tabuleiro de 64 casas.', False, (AZUL))
-		info2 = fonte.render('O objetivo do jogo eh capturar todas as pecas do oponente.', False, (VERDE_ESCURO))
-		info3 = fonte.render('A peca anda soh para frente, uma casa de cada vez, na diagonal.', False, (VERDE_ESCURO))
-		info4 = fonte.render('Quando a peca atinge a oitava linha do tabuleiro ela vira dama.', False, (VERDE_ESCURO))
-		info5 = fonte.render('A dama eh uma peca de movimentos mais amplos. Ela anda para frente e para tras,', False, (AZUL))
-		info6 = fonte.render('quantas casas quiser, nao podendo saltar sobre uma peca da mesma cor. ', False, (AZUL))
-		info7 = fonte.render('A captura e obrigatoria, ou seja, nao existe sopro.', False, (VERDE_ESCURO))
-		info8 = fonte.render('Duas ou mais pecas juntas, na mesma diagonal, nao podem ser capturadas.', False, (VERDE_ESCURO))
-		info9 = fonte.render('A peca e a dama podem capturar tanto para frente como para tras.', False, (AZUL))
-		info10 = fonte.render('O movimento de captura pode ser encadeado sem que o jogador passe a vez.', False, (AZUL))
+		info1 = fonte.render('1- O jogo de damas é praticado em um tabuleiro de 64 casas.', False, (BRANCO))
+		info2 = fonte.render('2- O objetivo do jogo é capturar todas as pecas do oponente.', False, (BRANCO))
+		info3 = fonte.render('3- A peca anda somente para frente, uma casa de cada vez, na diagonal.', False, (BRANCO))
+		info4 = fonte.render('4- Quando a peca atinge a oitava linha do tabuleiro ela vira dama.', False, (BRANCO))
+		info5 = fonte.render('5- A dama é uma peca de movimentos mais amplos. Ela anda para frente e para trás,', False, (BRANCO))
+		info6 = fonte.render('6- Dama anda casas quiser, nao podendo saltar sobre uma peca da mesma cor. ', False, (BRANCO))
+		info7 = fonte.render('7- A captura e obrigatória, ou seja, não existe sopro.', False, (BRANCO))
+		info8 = fonte.render('8- Duas ou mais pecas juntas, na mesma diagonal, não podem ser capturadas.', False, (BRANCO))
+		info9 = fonte.render('9- A peça e a dama podem capturar tanto para frente como para trás.', False, (BRANCO))
+		info10 = fonte.render('10- O movimento de captura pode ser encadeado sem que o jogador passe a vez.', False, (BRANCO))
 		
 		game1 = fonte.render('Durante o jogo, ao clicar em uma peca, sera exibido em verde os movimentos', False, (VERMELHO))
 		game2 = fonte.render('possiveis da mesma. Se nada acontecer ao clicar em uma peca, significa que', False, (VERMELHO))
@@ -730,7 +730,7 @@ def loop_jogo():
 			if evento.type == pygame.MOUSEBUTTONDOWN:
 				jogo.avalia_clique(pygame.mouse.get_pos())
 
-		display.fill(PRETO)
+		display.fill(PRETO)     
 		jogo.desenha()
 
 		vencedor = jogo.verifica_vencedor()
