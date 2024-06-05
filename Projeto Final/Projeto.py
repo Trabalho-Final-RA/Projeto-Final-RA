@@ -1,7 +1,6 @@
-# coding: utf-8
-# Lucas de Medeiros Nunes Fernandes, 117110210
-# lucas.medeiros.fernandes@ccc.ufcg.edu.br
-# Miniprojeto 1, Damas
+#Projeto final de RA
+#Pessoas do Grupo: José Carvalho, João Bringmann, Matheus Arruda
+#Mini Jogo de Damas
 
 import pygame
 from pygame.locals import *
@@ -570,23 +569,15 @@ def creditos():
 
 		display.fill(PRETO)
 		fonte = pygame.font.SysFont('comicsansms', 20)
-		surface_texto, rect_texto = text_objects("Programador: Lucas de Medeiros", fonte, BRANCO)
+		surface_texto, rect_texto = text_objects("Programador: Matheus Arruda, João Bringmann, José Carvalho", fonte, BRANCO)
 		rect_texto.center = ((LARGURA / 2), ALTURA / 3)
 		display.blit(surface_texto, rect_texto)
-
-		surface_texto, rect_texto = text_objects("Disciplina: Programacao 1 / Laboratorio de Programacao 1", fonte, BRANCO)
+      
+		surface_texto, rect_texto = text_objects("Disciplina: Projeto Final De RA", fonte, BRANCO)
 		rect_texto.center = ((LARGURA / 2), ALTURA / 2.7)
 		display.blit(surface_texto, rect_texto)
 
-		surface_texto, rect_texto = text_objects("Versao Python: 2.7.x", fonte, VERMELHO_CLARO)
-		rect_texto.center = ((LARGURA / 2), ALTURA / 1.5)
-		display.blit(surface_texto, rect_texto)
-
-		surface_texto, rect_texto = text_objects("Versao Pygame: 1.9.1", fonte, VERMELHO_CLARO)
-		rect_texto.center = ((LARGURA / 2), ALTURA / 1.3)
-		display.blit(surface_texto, rect_texto)
-
-		voltar = fonte.render('Pressione qualquer tecla para voltar ao menu.', False, VERDE_CLARO)
+		voltar = fonte.render('Pressione qualquer tecla para voltar ao menu.', False, BRANCO)
 		display.blit(voltar, (25, 550))
 
 		pygame.display.update()
