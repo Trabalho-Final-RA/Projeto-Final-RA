@@ -1,6 +1,6 @@
 #Projeto final de RA
-#Pessoas do Grupo: José Carvalho, João Bringmann, Matheus Arruda
-#Mini Jogo de Damas
+#Pessoas do Grupo: José Carvalho, João Bringmann, Matheus Arruda, Ashley Martins.
+#Jogo de Damas
 
 import pygame
 from pygame.locals import *
@@ -569,7 +569,7 @@ def creditos():
 
 		display.fill(PRETO)
 		fonte = pygame.font.SysFont('comicsansms', 20)
-		surface_texto, rect_texto = text_objects("Programador: Matheus Arruda, João Bringmann, José Carvalho", fonte, BRANCO)
+		surface_texto, rect_texto = text_objects("Programadores: Matheus Arruda, João Bringmann, José Carvalho, Ashley Martins", fonte, BRANCO)
 		rect_texto.center = ((LARGURA / 2), ALTURA / 3)
 		display.blit(surface_texto, rect_texto)
       
